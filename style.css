@@ -82,14 +82,63 @@ body {
 
 .loader::after {
     content: "";
-    width: 75px;
-    height: 75px;
+    width: 25px;
+    height: 25px;
     border: 15px solid #dddddd;
     border-top-color: var(--colorPrimary);
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
 }
 
+/*----------------------------*/
+/*ALERT BOX*/
+/*----------------------------*/
+.custom-alert {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-alert-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#alertMessage {
+    color: #000000;
+}
+
+/*----------------------------*/
+/*ANIMATIONS*/
+/*----------------------------*/
 @keyframes loading {
     from {
     transform: rotate(0turn);
@@ -97,6 +146,37 @@ body {
     to {
     transform: rotate(1turn);
     }
+}
+
+@keyframes fade-down {
+    from {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/*Hero Section text*/
+.animation-up {
+    animation: fade-up 0.8s;
+}
+
+.animation-down {
+    animation: fade-down 0.8s;
 }
 
 /*----------------------------*/
@@ -298,6 +378,10 @@ header {
     max-width: 90%;
     align-self: center;
     transition: 0.5s ease-in-out;
+}
+
+#brand-logo-3, .img-about-left {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
 .img-about-left:hover {
