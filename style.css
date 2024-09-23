@@ -138,6 +138,12 @@ header {
     backdrop-filter: blur(10px);
 }
 
+@media (max-width: 991px) {
+    header {
+        background-color: var(--colorBody);
+    }
+}
+
 .navbar {
     z-index: 100 !important;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); */
