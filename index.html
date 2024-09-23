@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J2K - Encontre o Imóvel perfeito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--PAGE LOADER-->
+    <div class="loader"></div>
+
+    <!--NAVBAR ACTIVE LINK SPY-->
+    <header id="header-nav">
+        <div class="navbar navbar-dark navbar-expand-lg">
+            <div class="container pt-1 pb-1">
+                <img src="/images/JK2_imoveis_logo.webp" alt="J2K Imóveis Logo" id="brand-logo-2" draggable="false" class="pb-1">
+                <img src="/images/logo.webp" alt="J2K Imóveis Logo" id="brand-logo" draggable="false" class="pb-1">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-dropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu-dropdown">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Buscar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faq" class="nav-link">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="#header-nav">
+        <!--HERO SECTION-->
+        <main id="home" class="">
+            <!--Left Content-->
+            <div class="container banner d-sm-block d-md-block d-lg-flex">
+                <div class="container d-flex flex-column container-hero-left">
+                    <h2 class="motto mx-5 text h1">Encontre o seu <span><strong>Lar</strong></span>.</h2>
+                    <p class="mx-5">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore sit voluptatibus libero numquam, quibusdam labore 
+                        laboriosam aut explicabo nobis ea molestiae eaque.
+                    </p>
+                    <button class="btn btn-hero btn-block shadow-sm mx-5"><a href="#contact" draggable="false">Comece agora</a></button>
+                </div>
+                <!--Right Content-->
+                <div class="container d-flex justify-content-center">
+                    <!-- <img src="./images/JK2_imoveis_logo.webp" draggable="false" alt="J2K Imóveis Logo" class="mx-5 mt-5 logo-hero-section"> -->
+                </div>
+            </div>
+        </main>
+
+        <!--ABOUT SECTION-->
+        <section id="about">
+            <div class="container banner d-sm-block d-md-block d-lg-flex pt-5 pb-5">
+                <!--Left Content-->
+                <div class="container d-flex flex-column container-hero-left mt-5 mb-5">
+                    <img src="./images/about_left_img.png" draggable="false" alt="Empresário de terno" loading="lazy" class="img-about-left">
+                </div>
+                <!--Right Content-->
+                <div class="container container-right-about mt-5 mb-5">
+                    <h2 class="motto text text-center h2">Sobre a J2K Imóveis</h2>
+                    <p class="mx-5 text text center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil quam ad! Optio consectetur nihil asperiores. Ut dicta magnam voluptatum at sequi? 
+                        Pariatur, repellat adipisci ducimus eos quisquam et voluptatibus suscipit quidem rerum! Eligendi, beatae!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--CONTACT SECTION-->
+        <section id="contact" class="pb-5">
+            <!--Left Content-->
+            <div class="container banner d-sm-block d-md-block d-lg-flex">
+                <div class="container d-flex flex-column container-hero-left">
+                    <img src="/images/JK2_imoveis_logo.webp" alt="J2K Imóveis Logo" id="brand-logo-3" draggable="false" class="pb-1 mb-3">
+                    <h2 class="motto mx-5 text text-center h2">Como podemos ajudá-lo?</h2>
+                    <p class="mx-5 text text-center">
+                        Preencha o formulário com as informações de suas preferências, e aguarde o retorno de um de nossos consultores.
+                    </p>
+                </div>
+                <!--Right Content-->
+                <div class="container mt-5">
+                    <form class="mx-0 form mx-auto" id="contact-form">
+                        <label for="user_name" class="form-label">
+                            Nome:
+                        </label>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person svg-icon" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                    </svg>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Nome completo" id="name" name="user_name" title="Insira seu nome completo" minlength="2" required>
+                            </div>
+                        </div>
+                        <label for="user_email" class="form-label">
+                            E-mail:
+                        </label>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope svg-icon" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                    </svg>
+                                </span>
+                                <input type="email" class="form-control" placeholder="email@seuemail.com" id="email" name="user_email" title="Insira seu e-mail" required>
+                            </div>
+                        </div>
+                        <label for="contact_number" class="form-label">
+                            Telefone:
+                        </label>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone svg-icon" viewBox="0 0 16 16">
+                                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                    </svg>
+                                </span>
+                                <input type="tel" class="form-control" placeholder="(00)00000-0000" id="tel" name="contact_number" pattern='[\(]\d{2}[\)]\d{5}[\-]\d{4}' title="Insira um telefone no formato (00)00000-0000" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="servico" class="form-label">Qual a preferência de moradia?</label>
+                            <select class="form-select" id="type" name="type" required>
+                                <option value="" class="disabled-opt" disabled selected>Selecione um tipo</option>
+                                <option value="house">Casa</option>
+                                <option value="apartment">Apartamento</option>
+                                <option value="community">Condomínio</option>
+                                <option value="any">Sem preferência</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horario" class="form-label">Até quantos M²?</label>
+                            <select class="form-select" id="horario" name="horario" required>
+                                <option value="" class="disabled-opt" disabled selected>Selecione o M²</option>
+                                <option value="50">Menos de 50m²</option>
+                                <option value="120">Até 120m²</option>
+                                <option value="300">Até 300m²</option>
+                                <option value="300+">Mais de 300m²</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-group my-4">
+                                <label for="message" class="form-label">
+                                    Informações adicionais:
+                                </label>
+                                <textarea class="form-control msg-control" name="message" id="message-area" rows="5" placeholder="Ex: Precisa conter piscina"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-left align-items-center">
+                            <button type="submit" class="btn btn-send btn-primary btn-block shadow-sm" id="send-form-btn">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--FAQ SECTION-->
+        <section id="faq" class="">
+            <div class="container banner d-block">
+                <h2 class="motto h2 text text-center">Perguntas Frequentes</h2>
+                <p class="text text-center pb-3">
+                    Tem alguma dúvida? Veja as perguntas frequentes
+                </p>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Quanto tempo leva para eu receber uma resposta?
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                Nosssos consultores vão buscar pelas melhores opções no mercado de acordo com as informações especificadas.<br>
+                                O processo não costuma durar mais que <strong>2 dias</strong> até que você receba uma mensagem de retorno. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Pergunta #2
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum vero id incidunt veritatis odio dignissimos cumque dolorum fugit at, 
+                                maiores velit neque possimus perspiciatis officiis dolorem adipisci excepturi repudiandae sint facere. Natus quam id odit incidunt nobis ratione amet.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Pergunta #3
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, deleniti eveniet temporibus sed molestiae voluptatum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            Pergunta #4
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, porro?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted footer-body">
+        <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom" id="info">
+            <div class="me-5 d-none d-lg-block mt-1">
+                <span>Siga-nos nas redes sociais ou entre em contato via Whatsapp:</span>
+            </div>
+            <div id="footer-social-links">
+                <a href="https://www.instagram.com/bearbeef.br/" target="blank" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+                <a href="#" target="blank" title="Whatsapp" id="contact-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <!--Logo and text-->
+        <section id="info-container" class="pt-5 border-bottom">
+            <div class="container text-center text-md-start">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" id="footer-info">
+                        <img src="./images/J2K_imoveis_logo_full.webp" draggable="false" alt="J2K logo" id="footer-logo">
+                    </div>
+                    <!--Section Column-->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-menu1">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            MENU
+                        </h6>
+                        <p>
+                            <a href="#home" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com//" class="text-reset">Instagram</a>
+                        </p>
+                    </div>
+                    <!--Section Column-->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                        J2K Imóveis.ltda®
+                        </h6>
+                        <p>
+                            CNPJ: 00.000.000/0001-00
+                        </p>
+                        <p>
+                            Desde 2024.
+                        </p>
+                    </div>
+                    
+                    <!--Section Column-->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!--Contact-->
+                        <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                                <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                            </svg>
+                            Rua Vinte Sete de Setembro, 999 - Centro, Curitiba - PR, 00000-000, Brasil</p>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
+                        De segunda a sexta, das 00:00h às 00:00h.
+                        </p>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                            +55 42 00000-0000</p>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                        </svg>
+                        +55 42 00000-0000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-1" id="footer-foot-note" style="background-color: var(--color-background-footer);">
+            <span>© 2024 Copyright: J2K Imóveis</span>
+        </div>
+    </footer>
+
+        <!--Libraries-->
+        <script src="./Lib/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> <!--JQuery-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+        <script src="./js plugins/jquery.mask.min.js"></script> <!--Plugin de máscara para validar telefones/email-->
+        <script src="/script.js"></script>
+        <script type="text/javascript" src="./emailjs.js"> </script>
+</body>
+</html>
