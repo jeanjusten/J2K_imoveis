@@ -207,7 +207,7 @@ header {
     background-image: url(/images/family-background.webp);
     background-size: cover;
     background-position: top right;
-    height: calc(100vh); 
+    height: 100svh; 
     align-items: center;
     justify-content: center;
     align-content: center;
