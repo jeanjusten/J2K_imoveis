@@ -93,6 +93,13 @@ body {
 /*----------------------------*/
 /*ALERT BOX*/
 /*----------------------------*/
+#brand-logo-popup {
+    display: hidden;
+    max-height: 50px;
+    width: auto;
+    align-self: center;
+}
+
 .custom-alert {
     display: none;
     position: fixed;

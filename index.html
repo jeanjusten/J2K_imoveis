@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-
     <script type="text/javascript">
         (function() {
         // https://dashboard.emailjs.com/admin/account
@@ -21,7 +20,6 @@
             });
         })();
     </script>
-    <script type="text/javascript" src="emailjs.js"></script>
 </head>
 <body>
     <!--PAGE LOADER-->
@@ -31,7 +29,11 @@
     <div id="customAlertBox" class="custom-alert">
         <div class="custom-alert-content">
             <span class="close">&times;</span>
-            <p id="alertMessage"></p>
+            <div class="d-flex flex-column justify-content-center">
+                <img src="/images/JK2_imoveis_logo.webp" alt="J2K Imóveis Logo" id="brand-logo-popup" draggable="false" class="pb-1 mb-3">
+                <p id="alertMessage">
+                </p>
+            </div>
         </div>
     </div>
 
@@ -158,7 +160,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="servico" class="form-label">Qual a preferência de moradia?</label>
+                            <label for="type" class="form-label">Qual a preferência de moradia?</label>
                             <select class="form-select" id="type" name="type" required>
                                 <option value="" class="disabled-opt" disabled selected>Selecione um tipo</option>
                                 <option value="house">Casa</option>
@@ -168,8 +170,8 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="horario" class="form-label">Até quantos M²?</label>
-                            <select class="form-select" id="horario" name="horario" required>
+                            <label for="sqmeters" class="form-label">Até quantos M²?</label>
+                            <select class="form-select" id="sqmeters" name="sqmeters" required>
                                 <option value="" class="disabled-opt" disabled selected>Selecione o M²</option>
                                 <option value="50">Menos de 50m²</option>
                                 <option value="120">Até 120m²</option>
@@ -354,5 +356,6 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
         <script src="./js plugins/jquery.mask.min.js"></script> <!--Plugin de máscara para validar telefones/email-->
         <script src="/script.js"></script>
+        <script type="text/javascript" src="emailjs.js"></script>
 </body>
 </html>

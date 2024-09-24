@@ -3,6 +3,7 @@
 const alertBox = document.getElementById("customAlertBox");
 const alertMessageContainer = document.getElementById("alertMessage");
 const closeImg = document.querySelector(".close");
+const modalImg = document.getElementById("brand-logo-popup");
 
 //----------------------//
 // Send E-mail via EmailJS //
@@ -10,10 +11,11 @@ window.onload = function() {
     document.getElementById("contact-form").addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // these IDs from the previous steps
         emailjs.sendForm("default_service", "contact_form", this).then((response) => {
                 console.log("Message was sent successfully!");
-                alertMessageContainer.innerHTML ="Seu formulário foi enviado. Obrigado por escolher a J2K Imóveis";
+
+                modalImg.style.display = "block";
+                alertMessageContainer.innerHTML ="Seu formulário foi enviado.<br>Obrigado por escolher a J2K Imóveis!";
                 alertBox.style.display = "block";
 
             }, (error) => {
