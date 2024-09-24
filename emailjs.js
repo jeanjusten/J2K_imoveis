@@ -4,11 +4,12 @@ const alertBox = document.getElementById("customAlertBox");
 const alertMessageContainer = document.getElementById("alertMessage");
 const closeImg = document.querySelector(".close");
 const modalImg = document.getElementById("brand-logo-popup");
+const form = document.getElementById("contact-form");
 
 //----------------------//
 // Send E-mail via EmailJS //
 window.onload = function() {
-    document.getElementById("contact-form").addEventListener('submit', function(event) {
+    form.addEventListener('submit', function(event) {
         event.preventDefault();
 
         emailjs.sendForm("default_service", "contact_form", this).then((response) => {
@@ -17,6 +18,7 @@ window.onload = function() {
                 modalImg.style.display = "block";
                 alertMessageContainer.innerHTML ="Seu formulário foi enviado.<br>Obrigado por escolher a J2K Imóveis!";
                 alertBox.style.display = "block";
+                form.reset();
 
             }, (error) => {
                 console.log("Falha ao enviar mensagem. Tente novamente.", error);
