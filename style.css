@@ -373,6 +373,7 @@ header {
 /*----------------------------*/
 #about {
     background-color: var(--colorBodySec);
+    position: relative;
 }
 
 .container-right-about p{
@@ -399,7 +400,7 @@ header {
 /*CONTACT SECTION*/
 /*----------------------------*/
 #contact {
-    padding-top: 50px;
+    position: relative;
     margin-bottom: 50px;
 }
 
@@ -508,11 +509,13 @@ select option[value=""][disabled] {
 /*FAQ SECTION*/
 /*----------------------------*/
 #faq {
+    position: relative;
     padding: 80px 0;
     background-color: var(--colorBodySec);
 }
 
-#faq .container h2 {
+#faq-h2 {
+    margin-top: 65px;
     text-transform: uppercase;
 }
 
@@ -642,4 +645,53 @@ select option[value=""][disabled] {
 #footer-developed-by a:hover {
     color: var(--colorPrimary) !important;
     text-decoration: underline;
+}
+
+
+/*----------------------------*/
+/*SECTION SHAPE DIVIDERS*/
+/*----------------------------*/
+/*Contact-end Divider*/
+.custom-shape-divider-top-1727206401 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1727206401 svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-top-1727206401 .shape-fill {
+    fill: var(--colorBodySec);
+}
+
+
+/*FAQ-Start Divider*/
+.custom-shape-divider-top-1727206977 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1727206977 svg {
+    position: relative;
+    display: block;
+    width: calc(106% + 1.3px);
+    height: 92px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1727206977 .shape-fill {
+    fill: var(--colorBody);
 }
