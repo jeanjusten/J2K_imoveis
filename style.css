@@ -237,14 +237,18 @@ header {
 }
 
 #brand-logo {
-    max-height: 28px;
+    max-height: 22px;
     margin-left: 0px;
+    height: auto;
+    width: auto;
 }
 
 #brand-logo-2 {
     margin-left: 50px;
     margin-right: 20px;
-    max-height: 40px;
+    max-height: 35px;
+    height: auto;
+    width: auto;
 }
 
 .nav-item a {
@@ -358,13 +362,13 @@ header {
     background-color: transparent;
     outline: 2px solid white;
     transition: 0.5s ease-in-out;
+    text-decoration: none;
+    color: var(--colorTextPrimary);
+    backdrop-filter: blur(10px);
 }
 
 .btn-hero:hover {
     background-color: var(--colorPrimary);
-}
-
-.btn-hero a {
     text-decoration: none;
     color: var(--colorTextPrimary);
 }
@@ -634,7 +638,6 @@ select option[value=""][disabled] {
 
 #footer-developed-by {
     font-weight: bold;
-
 }
 
 #footer-developed-by a {
@@ -647,7 +650,6 @@ select option[value=""][disabled] {
     color: var(--colorPrimary) !important;
     text-decoration: underline;
 }
-
 
 /*----------------------------*/
 /*SECTION SHAPE DIVIDERS*/
