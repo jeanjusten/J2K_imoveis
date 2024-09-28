@@ -286,6 +286,7 @@ header {
 /*MAIN SECTION*/
 /*----------------------------*/
 #home {
+    display: flex;
     object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
